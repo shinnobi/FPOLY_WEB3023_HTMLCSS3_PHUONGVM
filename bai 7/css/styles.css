@@ -1,0 +1,19 @@
+/* body { font-family: "Avenir Heavy"; } */
+
+div, span {
+background-color: #2e3f50;
+height:50px;
+border-radius: 5px;
+display:block;
+/* display: list-item;
+list-style-type: circle;
+list-style-position:inside ;  */
+}
+
+div { color: #fd8f59; }
+span { color: #1ebda5; }
+
+#div-2{
+    /* display:none */
+    visibility: hidden;
+}

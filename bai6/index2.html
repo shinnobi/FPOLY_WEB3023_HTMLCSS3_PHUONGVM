@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #e9d8f4
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            font-family: arial;
+            position: relative;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-delay: 4s;
+        }
+        #div1 {
+            animation-fill-mode: none;
+        }
+        #div2 {
+            animation-fill-mode: forwards;
+        }
+        #div3 {
+            animation-fill-mode: backwards;
+        }
+        #div4 {
+            animation-fill-mode: both;
+        }
+        @keyframes example {
+            from {
+                left: 0px;
+                background-color: red;
+            }
+            to {
+                left: 500px;
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">none</div><br>
+    <div id="div2">forwards</div><br>
+    <div id="div3">backwards</div><br>
+    <div id="div4">both</div><br>
+</body>
+
+</html>

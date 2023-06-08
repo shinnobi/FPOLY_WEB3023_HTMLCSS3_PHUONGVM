@@ -1,0 +1,27 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  text-align: center;
+  color: white;
+  margin: 20px;
+  transition-duration: 1s; 
+}
+.scale:hover {
+  transform: scale(1.5); /* phóng to 1.5 lần*/
+}
+.translate:hover {
+  transform: translateX(500px); /* dịch 500px sang phải*/
+}
+.rotate:hover {
+  transform: rotate(270deg);
+}
+.skew:hover {
+  transform: skew(15deg, 15deg);
+}
+
+.transOrigin:hover{
+  transform: rotate(45deg); 
+  transform-origin: top; 
+}
