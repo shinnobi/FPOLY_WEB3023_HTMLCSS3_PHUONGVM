@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab01</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header role="banner">
@@ -24,7 +25,10 @@
         <section>
         <form action="http://example.com/cgiscript.pl" method="post">
             <label for="firstname">first name: </label>
-            <input type="text" id="firstname" autofocus placeholder="day la first nam"><br />
+            <input type="text" id="firstname"  type="text"
+            pattern="[a-zA-Z0-9]" 
+            autofocus placeholder="day la first name" 
+            required minlength="3" maxlength="6"  ><br />
             <!-- multiple email ngan cach boi dau ,   -->
             <label for="file">file: </label>
             <input type="file" id="file" multiple><br />

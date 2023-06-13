@@ -1,0 +1,139 @@
+@font-face{
+    font-family: 'roboto';
+    src:url('fonts/Roboto-Regular.ttf')
+}
+@font-face{
+    font-family:"roboto";
+src:url("fonts/Roboto-Bold.ttf");
+font-weight:bold
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+.container{
+    max-width: 1440px;
+    margin:auto;
+}
+
+header img{
+    width: 100%;
+    height: 450px;
+    /* giup anh khong bi meo */
+    object-fit: cover; 
+}
+.logo{
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+}
+nav ul{
+display: flex;
+list-style: none;
+justify-content: center;
+line-height: 50px;
+}
+nav ul a{
+    color :black;
+    text-decoration:none;
+    padding:0 15px
+}
+nav ul a:hover{
+    text-decoration: underline;
+}
+.post-top{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    margin-top:30px;
+}
+.post-top-content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.post-top-content h2{
+    font-size: 48px;
+    padding-bottom: 30px;
+}
+.post-top-content p{
+    font-size:20px;
+    padding-bottom: 30px;
+}
+.post-top-content a{
+    width: 130px;
+    text-decoration: none;
+    color:white;
+    background-color: #ffa800;
+    padding:10px 0;
+    text-align: center;
+
+}
+.post-top-content a:hover{
+    background-color: green;
+}
+
+post-top img{
+    width: 100%;
+}
+
+h1{
+    font: size 60px;
+    padding:30px 0;
+    text-align: center;
+}
+.post{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px;
+}
+.post-item{
+    position: relative;
+    overflow: hidden;
+}
+.post-item img{
+    width: 100%;
+}
+.post-item .sub{ 
+    padding-top:15px;
+    text-align: center;
+    position: absolute;
+    bottom:-160px;
+    width: 100%;
+    background-color: white;
+    transition: 1s ease-in-out;
+}
+.sub a{
+    color:black;
+    font-size: 24px;
+    text-decoration: none;
+}
+.price {
+    font-size:24px;
+    padding :25px 0;
+
+}
+.sub a:hove{
+    color:#ffa800
+}
+a.book {
+font-size: 20px;
+display: block;
+padding: 10px 0;
+color: white;
+background-color: black;
+}
+
+.post-item:hover .sub{
+bottom: 0px;
+}
+/* viet noi tiep */
+.post-item img:hover{
+    transition: 1s;
+    transform: scale(1.5) rotate(90deg);
+}
+
+/* animation */
+

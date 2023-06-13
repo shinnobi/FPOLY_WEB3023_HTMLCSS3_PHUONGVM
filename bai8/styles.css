@@ -10,7 +10,6 @@
     float: left;
     width: 100%; /* The width is 20%, by default */
   }
-  
   .main {
     background-color: #f1f1f1;
     padding: 20px;
@@ -24,12 +23,10 @@
     float: left;
     width: 100%; /* The width is 20%, by default */
   }
-  
   /* Use a media query to add a break point at 800px: */
   @media screen and (min-width: 600px) {
    
   }
-
   @media screen and (min-width: 768px) {
     .left{
       width: 20%;
@@ -41,7 +38,6 @@
       width: 30%; /* The width is 100%, when the viewport is 800px or smaller */
     }
   }
-
   @media screen and (min-width: 992px) {
     .left{
       width: 20%;
